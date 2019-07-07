@@ -1,8 +1,7 @@
 var msg=$(".msg");
         function readURL(input) {
         if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            
+            var reader = new FileReader();    
             reader.onload = function (e) {
             	 // $('#profile-img-tag').attr('src', e.target.result);
             	 var img=$("<img src=''>").attr('src',e.target.result);
@@ -16,6 +15,7 @@ var msg=$(".msg");
     $("#fileName").trigger('click');
 });
     $("#fileName").change(function(e){
+        debugger
         var fileName = $(this).val();
         var idxDot = fileName.lastIndexOf(".") + 1;
         var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
