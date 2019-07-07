@@ -30,6 +30,6 @@ var msg=$(".msg");
         setInterval(function(){
         	msg.text("");
         	msg.removeClass("alert-success alert-danger");	
-        }, 9000);
+        }, 5000);
         $(this).val("");   
     });
