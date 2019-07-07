@@ -36,6 +36,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#">Sign Up</a></li>
 				<li><a href="#">Login</a></li>
+				<li><a href="#" class="fil">Add Image <i class="fa fa-plus"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -77,9 +78,13 @@
 				<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="pic">
 			</div>
 	</div>
-	<div>
-		<input name="image" type="file" id="fileName" accept=".jpg,.jpeg,.png"/>
-	</div>
+	<div class="input-group" style="margin-bottom:15px;">
+        <label class="input-group-btn">
+             <span class="btn btn-success" style="padding:10px 20px;font-weight:700;border-radius:5px;">
+                    ADD IMAGE <i class="fa fa-plus"></i> <input id="fileName" accept=".jpg,.jpeg,.png" type="file" style="display: none;" multiple>
+               </span>
+        </label>
+    </div>
 </div>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

@@ -11,7 +11,10 @@ var msg=$(".msg");
             }
             reader.readAsDataURL(input.files[0]);
         }
-    }
+    };
+    $('.fil').click(function(){
+    $("#fileName").trigger('click');
+});
     $("#fileName").change(function(e){
         var fileName = $(this).val();
         var idxDot = fileName.lastIndexOf(".") + 1;
