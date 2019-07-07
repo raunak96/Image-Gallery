@@ -15,7 +15,6 @@ var msg=$(".msg");
     $("#fileName").trigger('click');
 });
     $("#fileName").change(function(e){
-        debugger
         var fileName = $(this).val();
         var idxDot = fileName.lastIndexOf(".") + 1;
         var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
