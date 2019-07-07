@@ -27,6 +27,6 @@ var msg=$(".msg");
         setInterval(function(){
         	msg.text("");
         	msg.removeClass("alert-success alert-danger");	
-        }, 3000);
+        }, 9000);
         $(this).val("");   
     });
